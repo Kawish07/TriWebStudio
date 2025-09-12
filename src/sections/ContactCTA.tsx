@@ -40,7 +40,7 @@ export default function ContactCTA() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6"
           >
-            Let's Build Something
+              Let&apos;s Build Something
             <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
               Extraordinary
             </span>

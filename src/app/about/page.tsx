@@ -92,7 +92,7 @@ export default function AboutPage() {
           </h1>
           <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed mb-12 animate-fade-in">
             We empower businesses to thrive online through beautiful design, robust development, and smart digital marketing. 
-            Founded in 2022, we've been helping companies transform their digital presence with cutting-edge solutions.
+            Founded in 2022, we&apos;ve been helping companies transform their digital presence with cutting-edge solutions.
           </p>
         </motion.div>
 

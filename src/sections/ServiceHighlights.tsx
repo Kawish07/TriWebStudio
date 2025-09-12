@@ -97,7 +97,7 @@ export default function ServiceHighlights() {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-slate-600 dark:text-slate-300 mb-6">
-            Need a custom solution? We've got you covered.
+              Need a custom solution? We&apos;ve got you covered.
           </p>
           <a 
             href="/contact" 
