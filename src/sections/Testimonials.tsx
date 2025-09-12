@@ -48,7 +48,7 @@ export default function Testimonials() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl text-white/70 max-w-3xl mx-auto"
           >
-            Don't just take our word for it. Here's what our clients say about their experience working with us.
+            Don&apos;t just take our word for it. Here&apos;s what our clients say about their experience working with us.
           </motion.p>
         </div>
 
@@ -79,7 +79,7 @@ export default function Testimonials() {
 
                 {/* Testimonial text */}
                 <blockquote className="text-white/90 leading-relaxed mb-8 relative z-10">
-                  "{testimonial.feedback}"
+                  &quot;{testimonial.feedback}&quot;
                 </blockquote>
 
                 {/* Client info */}
@@ -96,7 +96,7 @@ export default function Testimonials() {
                     </div>
                     <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-400/20 to-purple-500/20 blur-md group-hover:blur-lg transition-all"></div>
                   </div>
-                  
+
                   <div>
                     <div className="font-semibold text-white">
                       {testimonial.name}
@@ -109,7 +109,7 @@ export default function Testimonials() {
 
                 {/* Decorative gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 via-transparent to-purple-600/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                
+
                 {/* Border gradient */}
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-500/20 via-transparent to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-sm"></div>
               </div>
@@ -134,17 +134,17 @@ export default function Testimonials() {
               ))}
             </div>
           </div>
-          
+
           <div className="text-center">
             <div className="text-3xl font-bold text-white mb-1">100%</div>
             <div className="text-white/60 text-sm">Client Satisfaction</div>
           </div>
-          
+
           <div className="text-center">
             <div className="text-3xl font-bold text-white mb-1">48h</div>
             <div className="text-white/60 text-sm">Response Time</div>
           </div>
-          
+
           <div className="text-center">
             <div className="text-3xl font-bold text-white mb-1">2+</div>
             <div className="text-white/60 text-sm">Years Experience</div>
@@ -159,8 +159,8 @@ export default function Testimonials() {
           transition={{ duration: 0.8, delay: 1 }}
           className="text-center mt-12"
         >
-          <a 
-            href="/contact" 
+          <a
+            href="/contact"
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/25 group"
           >
             Join Our Success Stories

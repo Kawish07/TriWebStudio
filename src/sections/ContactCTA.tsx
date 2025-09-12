@@ -104,7 +104,7 @@ export default function ContactCTA() {
               <FaPhone className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Quick Call</h3>
-            <p className="text-slate-600 dark:text-slate-300 mb-4">Let's discuss your project over a friendly call</p>
+                <p className="text-slate-600 dark:text-slate-300 mb-4">Let&apos;s discuss your project over a friendly call</p>
             <span className="text-blue-600 dark:text-blue-400 font-semibold">Book a Call →</span>
           </div>
 

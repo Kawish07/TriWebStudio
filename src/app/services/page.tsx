@@ -1,61 +1,94 @@
 "use client";
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 const SERVICES = [
   {
     id: 1,
     title: "Full-Stack Development",
-    description: "End-to-end web solutions using modern technologies like React, Next.js, Node.js, and databases.",
-    features: ["Custom Web Applications", "API Development", "Database Design", "Performance Optimization"],
+    description:
+      "End-to-end web solutions using modern technologies like React, Next.js, Node.js, and databases.",
+    features: [
+      "Custom Web Applications",
+      "API Development",
+      "Database Design",
+      "Performance Optimization",
+    ],
     icon: "💻",
-    price: "Starting at $2,500"
+    price: "Starting at $2,500",
   },
   {
     id: 2,
     title: "SEO & Digital Marketing",
-    description: "Boost your online presence with strategic SEO, content marketing, and paid advertising campaigns.",
-    features: ["Search Engine Optimization", "Content Marketing", "Social Media Management", "PPC Advertising"],
+    description:
+      "Boost your online presence with strategic SEO, content marketing, and paid advertising campaigns.",
+    features: [
+      "Search Engine Optimization",
+      "Content Marketing",
+      "Social Media Management",
+      "PPC Advertising",
+    ],
     icon: "📈",
-    price: "Starting at $800/month"
+    price: "Starting at $800/month",
   },
   {
     id: 3,
     title: "Front-End Design & UI/UX",
-    description: "Beautiful, user-friendly designs that convert visitors into customers with modern aesthetics.",
-    features: ["Responsive Web Design", "User Experience Research", "Brand Identity", "Mobile-First Approach"],
+    description:
+      "Beautiful, user-friendly designs that convert visitors into customers with modern aesthetics.",
+    features: [
+      "Responsive Web Design",
+      "User Experience Research",
+      "Brand Identity",
+      "Mobile-First Approach",
+    ],
     icon: "🎨",
-    price: "Starting at $1,200"
+    price: "Starting at $1,200",
   },
   {
     id: 4,
     title: "E-Commerce Solutions",
-    description: "Complete online stores with payment integration, inventory management, and customer analytics.",
-    features: ["Shopify Development", "WooCommerce", "Payment Integration", "Inventory Management"],
+    description:
+      "Complete online stores with payment integration, inventory management, and customer analytics.",
+    features: [
+      "Shopify Development",
+      "WooCommerce",
+      "Payment Integration",
+      "Inventory Management",
+    ],
     icon: "🛒",
-    price: "Starting at $3,500"
+    price: "Starting at $3,500",
   },
   {
     id: 5,
     title: "Website Maintenance",
-    description: "Keep your website secure, updated, and performing at its best with our ongoing support.",
-    features: ["Security Updates", "Performance Monitoring", "Content Updates", "Backup Management"],
+    description:
+      "Keep your website secure, updated, and performing at its best with our ongoing support.",
+    features: [
+      "Security Updates",
+      "Performance Monitoring",
+      "Content Updates",
+      "Backup Management",
+    ],
     icon: "🔧",
-    price: "Starting at $200/month"
+    price: "Starting at $200/month",
   },
   {
     id: 6,
     title: "Consulting & Strategy",
-    description: "Strategic guidance for your digital transformation journey and technology decisions.",
-    features: ["Technology Consulting", "Digital Strategy", "Performance Audits", "Growth Planning"],
+    description:
+      "Strategic guidance for your digital transformation journey and technology decisions.",
+    features: [
+      "Technology Consulting",
+      "Digital Strategy",
+      "Performance Audits",
+      "Growth Planning",
+    ],
     icon: "💡",
-    price: "Starting at $150/hour"
-  }
+    price: "Starting at $150/hour",
+  },
 ];
 
 export default function ServicesPage() {
-  const [hoveredService, setHoveredService] = useState<number | null>(null);
-
   return (
     <section className="relative min-h-screen py-20 px-4 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 dark:from-slate-900 dark:via-purple-900 dark:to-slate-900 overflow-hidden">
       {/* Animated blurred background shapes for vibrancy */}
@@ -65,7 +98,7 @@ export default function ServicesPage() {
 
       <div className="relative z-10 w-full max-w-7xl mx-auto">
         {/* Header Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
@@ -75,7 +108,9 @@ export default function ServicesPage() {
             Our Services
           </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            Transform your digital presence with our comprehensive suite of services. From stunning websites to powerful marketing strategies, we've got you covered.
+            Transform your digital presence with our comprehensive suite of
+            services. From stunning websites to powerful marketing strategies,
+            we&apos;ve got you covered.
           </p>
         </motion.div>
 
@@ -89,8 +124,6 @@ export default function ServicesPage() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.05, duration: 0.3 }}
               whileHover={{ scale: 1.05, transition: { duration: 0.15 } }}
-              onHoverStart={() => setHoveredService(service.id)}
-              onHoverEnd={() => setHoveredService(null)}
               className="bg-gradient-to-br from-slate-800/80 via-purple-900/80 to-slate-900/80 rounded-3xl shadow-2xl p-8 border border-white/10 backdrop-blur-md hover:shadow-purple-500/25 transition-all duration-200 group"
             >
               <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -104,12 +137,15 @@ export default function ServicesPage() {
               </p>
               <ul className="space-y-2 mb-6">
                 {service.features.map((feature, idx) => (
-                  <motion.li 
+                  <motion.li
                     key={idx}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    transition={{ delay: (index * 0.05) + (idx * 0.05), duration: 0.2 }}
+                    transition={{
+                      delay: index * 0.05 + idx * 0.05,
+                      duration: 0.2,
+                    }}
                     className="flex items-center text-gray-300"
                   >
                     <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mr-3 group-hover:scale-125 transition-transform duration-150"></span>
@@ -134,7 +170,7 @@ export default function ServicesPage() {
         </div>
 
         {/* CTA Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -145,7 +181,8 @@ export default function ServicesPage() {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-            Let's discuss your project and create something amazing together. Get a free consultation today.
+            Let&apos;s discuss your project and create something amazing
+            together. Get a free consultation today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <motion.button
