@@ -10,9 +10,9 @@ const team = [
     bio: "2+ years experience in Full Stack development with expertise in React, Node.js, and cloud architecture.",
     avatar: "/images/myimage.jpg",
     socials: [
-      { platform: "LinkedIn", url: "#" },
-      { platform: "GitHub", url: "#" },
-      { platform: "Portfolio", url: "#" }
+      { platform: "LinkedIn", url: "https://www.linkedin.com/in/kawish-iqbal-222767264/" },
+      { platform: "GitHub", url: "https://github.com/Kawish07" },
+      { platform: "Portfolio", url: "https://portfolio-c6th.vercel.app/" }
     ]
   },
   {
@@ -21,8 +21,8 @@ const team = [
     bio: "Creative designer passionate about crafting beautiful, user-centered experiences that drive engagement.",
     avatar: "/images/ahassamimage.jpg",
     socials: [
-      { platform: "LinkedIn", url: "#" },
-      { platform: "GitHub", url: "#" },
+      { platform: "LinkedIn", url: "https://www.linkedin.com/in/ahsam-abbasi1133/" },
+      { platform: "GitHub", url: "https://github.com/AhassamShafique" },
       { platform: "Portfolio", url: "#" }
     ]
   },

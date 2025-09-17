@@ -14,8 +14,8 @@ export const team: TeamMember[] = [
     bio: "Expert in scalable web apps and backend systems.",
     avatar: "/images/myimage.jpg",
     socials: [
-      { platform: "LinkedIn", url: "#" },
-      { platform: "GitHub", url: "#" },
+      { platform: "LinkedIn", url: "https://www.linkedin.com/in/kawish-iqbal-222767264/" },
+      { platform: "GitHub", url: "https://github.com/Kawish07" },
     ],
   },
   {
@@ -24,8 +24,8 @@ export const team: TeamMember[] = [
     bio: "Passionate about clean, user-centered design.",
     avatar: "/window.svg",
     socials: [
-      { platform: "LinkedIn", url: "#" },
-      { platform: "Dribbble", url: "#" },
+      { platform: "LinkedIn", url: "https://www.linkedin.com/in/ahsam-abbasi1133/" },
+      { platform: "GitHub", url: "https://github.com/AhassamShafique" },
     ],
   },
   {
