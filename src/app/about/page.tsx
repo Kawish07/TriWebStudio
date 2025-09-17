@@ -5,36 +5,36 @@ import { useState } from "react";
 // Mock team data - replace with your actual team import
 const team = [
   {
-    name: "Sarah Johnson",
-    role: "Full-Stack Developer & Co-Founder",
-    bio: "10+ years experience in web development with expertise in React, Node.js, and cloud architecture.",
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face&auto=format&q=60",
+    name: "Kawish Iqbal",
+    role: "Full-Stack Developer",
+    bio: "2+ years experience in Full Stack development with expertise in React, Node.js, and cloud architecture.",
+    avatar: "/images/myimage.jpg",
     socials: [
       { platform: "LinkedIn", url: "#" },
       { platform: "GitHub", url: "#" },
-      { platform: "Twitter", url: "#" }
+      { platform: "Portfolio", url: "#" }
     ]
   },
   {
-    name: "Mike Chen",
-    role: "UI/UX Designer & Co-Founder",
+    name: "Ahassam Shafiq",
+    role: "UI/UX Designer and WordPress Developer",
     bio: "Creative designer passionate about crafting beautiful, user-centered experiences that drive engagement.",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face&auto=format&q=60",
+    avatar: "/images/ahassamimage.jpg",
     socials: [
       { platform: "LinkedIn", url: "#" },
-      { platform: "Dribbble", url: "#" },
-      { platform: "Behance", url: "#" }
+      { platform: "GitHub", url: "#" },
+      { platform: "Portfolio", url: "#" }
     ]
   },
   {
-    name: "Alex Rodriguez",
-    role: "Digital Marketing Expert & Co-Founder",
+    name: "Shafay Gillani",
+    role: "Digital Marketing Expert",
     bio: "Data-driven marketer specializing in SEO, content strategy, and performance marketing campaigns.",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face&auto=format&q=60",
     socials: [
       { platform: "LinkedIn", url: "#" },
-      { platform: "Twitter", url: "#" },
-      { platform: "Instagram", url: "#" }
+      { platform: "GitHub", url: "#" },
+      { platform: "Portfolio", url: "#" }
     ]
   }
 ];
@@ -63,9 +63,9 @@ const VALUES = [
 ];
 
 const STATS = [
-  { number: "100+", label: "Projects Completed" },
-  { number: "50+", label: "Happy Clients" },
-  { number: "3+", label: "Years Experience" },
+  { number: "20+", label: "Projects Completed" },
+  { number: "20+", label: "Happy Clients" },
+  { number: "2+", label: "Years Experience" },
   { number: "24/7", label: "Support Available" }
 ];
 
@@ -171,7 +171,7 @@ export default function AboutPage() {
           className="mb-20"
         >
           <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 text-center">
-            Meet the Founders
+            Meet the Developers
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 text-center mb-12 max-w-3xl mx-auto">
             Our diverse team brings together expertise in development, design, and marketing to deliver exceptional results.

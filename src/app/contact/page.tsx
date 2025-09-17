@@ -1,12 +1,15 @@
 
 "use client";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 const SERVICES = [
   "Full-Stack Development",
+  "WordPress Development",
   "SEO & Digital Marketing",
   "Front-End Design & UI/UX",
+  "E-Commerce Solutions",
+  "Website Maintenance",
 ];
 
 export default function ContactPage() {
@@ -15,16 +18,26 @@ export default function ContactPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  // Auto-hide success message after 2.5 seconds
+  useEffect(() => {
+    if (sent) {
+      const timer = setTimeout(() => {
+        setSent(false);
+      }, 2500);
+      return () => clearTimeout(timer);
+    }
+  }, [sent]);
+
   const sendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setError("");
     try {
       await emailjs.sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        "service_iizlwhd",
+        "template_09ogwvj",
         form.current!,
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID!
+        "uw06-ANaOcOH0Ll6_"
       );
       setSent(true);
     } catch (err) {
@@ -77,8 +90,8 @@ export default function ContactPage() {
           {error && <p className="text-red-600 font-semibold">{error}</p>}
         </form>
         <div className="mt-10 text-center text-slate-600 dark:text-slate-300">
-          <p>TriWeb Studio, 123 Main St, Your City</p>
-          <p>Email: hello@triwebstudio.com</p>
+          <p>TriWeb Studio, The Mall Road, Peshawar</p>
+          <p>Email: info.triwebstudio@gmail.com</p>
           {/* Optionally embed Google Map here */}
         </div>
       </div>

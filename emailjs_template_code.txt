@@ -1,0 +1,20 @@
+// EmailJS Template Example for TriWeb Studio Contact Form
+
+// Add these variables to your EmailJS template:
+
+Name:   {{user_name}}
+Email:  {{user_email}}
+Service: {{service}}
+Message: {{message}}
+
+// Example email body for your template:
+
+You have a new inquiry from TriWeb Studio:
+
+Name: {{user_name}}
+Email: {{user_email}}
+Service Interested In: {{service}}
+Message:
+{{message}}
+
+// You can customize the subject and body as needed in the EmailJS dashboard.

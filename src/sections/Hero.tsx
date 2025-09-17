@@ -150,11 +150,11 @@ export default function Hero() {
           className="flex flex-wrap justify-center gap-8 mt-16 text-white/60"
         >
           <div className="text-center">
-            <div className="text-2xl font-bold text-white">100+</div>
+            <div className="text-2xl font-bold text-white">20+</div>
             <div className="text-sm">Projects Completed</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl font-bold text-white">50+</div>
+            <div className="text-2xl font-bold text-white">20+</div>
             <div className="text-sm">Happy Clients</div>
           </div>
           <div className="text-center">

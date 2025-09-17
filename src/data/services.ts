@@ -21,8 +21,8 @@ export const services = [
     ],
   },
   {
-    title: "Front-End Design & UI/UX",
-    description: "Beautiful, user-friendly interfaces for all devices.",
+    title: "Wordpress Development",
+    description: "Custom Wordpress themes and plugins for your business.",
     features: [
       "Responsive Web Design",
       "Branding & Style Guides",

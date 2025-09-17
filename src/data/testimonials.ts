@@ -1,20 +1,20 @@
 // Placeholder for testimonials data
 export const testimonials = [
   {
-    name: "Jane Doe",
-    company: "Acme Corp",
+    name: "Haider",
+    company: "Crafting Colons",
     feedback: "TriWeb Studio delivered our project on time and exceeded expectations!",
     avatar: "/globe.svg",
   },
   {
-    name: "John Smith",
-    company: "Beta LLC",
+    name: "Fawad",
+    company: "Evolvians Software",
     feedback: "Professional, creative, and highly responsive team.",
     avatar: "/window.svg",
   },
   {
-    name: "Emily Chen",
-    company: "Gamma Inc",
+    name: "Shafay",
+    company: "Sparks Foundation",
     feedback: "Our website looks stunning and ranks higher on Google.",
     avatar: "/file.svg",
   },

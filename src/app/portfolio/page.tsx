@@ -74,6 +74,26 @@ export default function PortfolioPage() {
                   </span>
                 ))}
               </div>
+
+              {/* Action buttons */}
+              <div className="flex gap-3 mt-2">
+                <a
+                  href={project.github || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-lg bg-gradient-to-r from-slate-800 via-blue-700 to-purple-700 text-white font-semibold text-xs shadow hover:from-blue-600 hover:to-purple-600 transition-all duration-200"
+                >
+                  GitHub
+                </a>
+                <a
+                  href={project.demo || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold text-xs shadow hover:from-blue-600 hover:to-purple-600 transition-all duration-200"
+                >
+                  Live Demo
+                </a>
+              </div>
             </motion.div>
           ))}
         </div>

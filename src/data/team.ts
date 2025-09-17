@@ -9,17 +9,17 @@ type TeamMember = {
 
 export const team: TeamMember[] = [
   {
-    name: "Alex Rivera",
+    name: "Kawish Iqbal",
     role: "Full-Stack Developer",
     bio: "Expert in scalable web apps and backend systems.",
-    avatar: "/globe.svg",
+    avatar: "/images/myimage.jpg",
     socials: [
       { platform: "LinkedIn", url: "#" },
       { platform: "GitHub", url: "#" },
     ],
   },
   {
-    name: "Samantha Lee",
+    name: "Ahassam Shafique",
     role: "UI/UX Designer",
     bio: "Passionate about clean, user-centered design.",
     avatar: "/window.svg",
@@ -29,7 +29,7 @@ export const team: TeamMember[] = [
     ],
   },
   {
-    name: "Michael Chen",
+    name: "Shafay Gilani",
     role: "SEO Specialist",
     bio: "Drives organic growth and search visibility.",
     avatar: "/file.svg",
