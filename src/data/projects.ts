@@ -35,7 +35,7 @@ export const projects: Project[] = [
     tech: ["React", "Tailwind CSS"],
     category: "Front-End",
   github: "https://github.com/Kawish07/iqra-university",
-  demo: "https://iqra-university-frontend.vercel.app/",
+  demo: "https://iqra-university-1.vercel.app/",
   },
   {
     title: "PK News Website",
