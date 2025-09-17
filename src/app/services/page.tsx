@@ -14,7 +14,7 @@ const SERVICES = [
       "Performance Optimization",
     ],
     icon: "💻",
-    price: "Starting at $2,500",
+    price: "Starting at 20000 Pkr",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const SERVICES = [
       "PPC Advertising",
     ],
     icon: "📈",
-    price: "Starting at $800/month",
+    price: "Starting at 10000 Pkr",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const SERVICES = [
       "Mobile-First Approach",
     ],
     icon: "🎨",
-    price: "Starting at $1,200",
+    price: "Starting at 12000 Pkr",
   },
   {
     id: 4,
@@ -56,7 +56,7 @@ const SERVICES = [
       "Inventory Management",
     ],
     icon: "🛒",
-    price: "Starting at $3,500",
+    price: "Starting at 15000 Pkr",
   },
   {
     id: 5,
@@ -70,7 +70,7 @@ const SERVICES = [
       "Backup Management",
     ],
     icon: "🔧",
-    price: "Starting at $200/month",
+    price: "Starting at 20000 Pkr/month",
   },
   {
     id: 6,
@@ -84,7 +84,7 @@ const SERVICES = [
       "Growth Planning",
     ],
     icon: "💡",
-    price: "Starting at $150/hour",
+    price: "Starting at 2000 Pkr/hour",
   },
 ];
 
