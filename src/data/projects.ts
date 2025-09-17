@@ -34,8 +34,8 @@ export const projects: Project[] = [
   image: "https://static.wixstatic.com/media/030a37_5b03e496fed24c02bed4503c66a09c28~mv2.jpg/v1/fill/w_1476,h_502,al_c,q_85,enc_avif,quality_auto/Main-Banner%20.jpg", // University
     tech: ["React", "Tailwind CSS"],
     category: "Front-End",
-  github: "https://github.com/Kawish07/portfolio",
-  demo: "https://iqra-university.vercel.app",
+  github: "https://github.com/Kawish07/iqra-university",
+  demo: "https://iqra-university-frontend.vercel.app/",
   },
   {
     title: "PK News Website",
