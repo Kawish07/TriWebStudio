@@ -18,19 +18,19 @@ const team = [
   {
     name: "Ahassam Shafiq",
     role: "UI/UX Designer and WordPress Developer",
-    bio: "Creative designer passionate about crafting beautiful, user-centered experiences that drive engagement.",
+    bio: "(1+ years) Creative designer passionate about crafting beautiful, user-centered experiences that drive engagement.",
     avatar: "/images/ahassamimage.jpg",
     socials: [
       { platform: "LinkedIn", url: "https://www.linkedin.com/in/ahsam-abbasi1133/" },
       { platform: "GitHub", url: "https://github.com/AhassamShafique" },
-      { platform: "Portfolio", url: "#" }
+      { platform: "Portfolio", url: "https://ahsam-portfolio-4eba.vercel.app/" }
     ]
   },
   {
     name: "Aqsa Afzal",
     role: "Digital Marketing and SEO Expert",
     bio: "Data-driven marketer specializing in SEO, content strategy, and performance marketing campaigns.",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face&auto=format&q=60",
+    avatar: "",
     socials: [
       { platform: "LinkedIn", url: "#" },
       { platform: "GitHub", url: "#" },
@@ -77,20 +77,20 @@ export default function AboutPage() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2
+        staggerChildren: 0.05,
+        delayChildren: 0.1
       }
     }
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 15 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.4,
-        ease: "easeOut"
+        duration: 0.3,
+        ease: [0.25, 0.46, 0.45, 0.94]
       }
     }
   };
@@ -99,10 +99,10 @@ export default function AboutPage() {
     <section className="relative min-h-screen py-20 px-4 bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 overflow-hidden">
       {/* Enhanced animated background with glassmorphism */}
       <div className="absolute inset-0">
-        <div className="absolute -top-40 -left-40 w-80 h-80 bg-blue-500/30 rounded-full blur-3xl animate-float" />
-        <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-purple-600/30 rounded-full blur-3xl animate-float-delayed" />
-        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 left-1/4 w-72 h-72 bg-indigo-500/20 rounded-full blur-3xl animate-float-slow" />
+        <div className="absolute -top-40 -left-40 w-80 h-80 bg-blue-500/30 rounded-full blur-3xl animate-float will-change-transform" />
+        <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-purple-600/30 rounded-full blur-3xl animate-float-delayed will-change-transform" />
+        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl animate-pulse will-change-transform" />
+        <div className="absolute bottom-1/4 left-1/4 w-72 h-72 bg-indigo-500/20 rounded-full blur-3xl animate-float-slow will-change-transform" />
       </div>
 
       {/* Noise texture overlay */}
@@ -112,13 +112,13 @@ export default function AboutPage() {
         className="relative z-10 w-full max-w-7xl mx-auto"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.4 }}
       >
         {/* Hero Section */}
         <motion.div 
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
           className="mb-24 text-center"
         >
           <motion.h1 
@@ -137,9 +137,9 @@ export default function AboutPage() {
           </motion.h1>
           <motion.p 
             className="text-xl md:text-2xl text-gray-300 max-w-5xl mx-auto leading-relaxed font-light"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
           >
             We empower businesses to thrive online through beautiful design, robust development, and smart digital marketing. 
             Founded in 2022, we&apos;ve been helping companies transform their digital presence with cutting-edge solutions.
@@ -148,30 +148,30 @@ export default function AboutPage() {
 
         {/* Stats Section */}
         <motion.section 
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
           className="mb-24"
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {STATS.map((stat, index) => (
               <motion.div
                 key={stat.label}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.4 }}
+                transition={{ delay: index * 0.05, duration: 0.3 }}
                 whileHover={{ 
-                  scale: 1.05, 
-                  y: -8,
-                  transition: { duration: 0.2, ease: "easeOut" }
+                  scale: 1.03, 
+                  y: -5,
+                  transition: { duration: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }
                 }}
-                className="group relative bg-white/5 backdrop-blur-xl rounded-2xl p-8 text-center border border-white/10 hover:border-white/20 transition-all duration-200 hover:shadow-2xl hover:shadow-purple-500/20"
+                className="group relative bg-white/5 backdrop-blur-xl rounded-2xl p-8 text-center border border-white/10 hover:border-white/20 transition-all duration-150 hover:shadow-2xl hover:shadow-purple-500/20 will-change-transform"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-150" />
                 <div className="relative z-10">
-                  <div className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 mb-3 group-hover:scale-110 transition-transform duration-200">
+                  <div className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 mb-3 group-hover:scale-105 transition-transform duration-150">
                     {stat.number}
                   </div>
                   <div className="text-gray-300 font-medium text-sm md:text-base">
@@ -185,17 +185,17 @@ export default function AboutPage() {
 
         {/* Our Values Section */}
         <motion.section 
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
           className="mb-24"
         >
           <motion.h2 
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
             className="text-5xl md:text-6xl font-black mb-16 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 text-center"
           >
             Our Core Values
@@ -204,27 +204,27 @@ export default function AboutPage() {
             {VALUES.map((value, index) => (
               <motion.div
                 key={value.title}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.4 }}
+                transition={{ delay: index * 0.05, duration: 0.3 }}
                 whileHover={{ 
-                  scale: 1.03,
-                  y: -10,
-                  transition: { duration: 0.2, ease: "easeOut" }
+                  scale: 1.02,
+                  y: -6,
+                  transition: { duration: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }
                 }}
-                className="group relative bg-white/5 backdrop-blur-xl rounded-3xl p-8 text-center border border-white/10 hover:border-white/20 transition-all duration-200 hover:shadow-2xl hover:shadow-purple-500/20"
+                className="group relative bg-white/5 backdrop-blur-xl rounded-3xl p-8 text-center border border-white/10 hover:border-white/20 transition-all duration-150 hover:shadow-2xl hover:shadow-purple-500/20 will-change-transform"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-150" />
                 <div className="relative z-10">
                   <motion.div 
                     className="text-6xl mb-6"
-                    whileHover={{ scale: 1.2, rotate: 12 }}
-                    transition={{ duration: 0.2, ease: "easeOut" }}
+                    whileHover={{ scale: 1.1, rotate: 6 }}
+                    transition={{ duration: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
                   >
                     {value.icon}
                   </motion.div>
-                  <h3 className="text-xl md:text-2xl font-bold mb-4 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-500 transition-all duration-200">
+                  <h3 className="text-xl md:text-2xl font-bold mb-4 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-500 transition-all duration-150">
                     {value.title}
                   </h3>
                   <p className="text-gray-300 leading-relaxed text-sm md:text-base">
@@ -238,17 +238,17 @@ export default function AboutPage() {
 
         {/* Team Section */}
         <motion.section 
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
           className="mb-24"
         >
           <motion.div 
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
             className="text-center mb-16"
           >
             <h2 className="text-5xl md:text-6xl font-black mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
@@ -263,45 +263,57 @@ export default function AboutPage() {
             {team.map((member, index) => (
               <motion.div
                 key={member.name}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.15, duration: 0.4 }}
+                transition={{ delay: index * 0.08, duration: 0.3 }}
                 whileHover={{ 
                   scale: 1.02,
-                  y: -12,
-                  transition: { duration: 0.2, ease: "easeOut" }
+                  y: -8,
+                  transition: { duration: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }
                 }}
                 onHoverStart={() => setHoveredMember(member.name)}
                 onHoverEnd={() => setHoveredMember(null)}
-                className="group relative bg-white/5 backdrop-blur-xl rounded-3xl p-8 flex flex-col items-center border border-white/10 hover:border-white/20 transition-all duration-200 hover:shadow-2xl hover:shadow-purple-500/20"
+                className="group relative bg-white/5 backdrop-blur-xl rounded-3xl p-8 flex flex-col items-center border border-white/10 hover:border-white/20 transition-all duration-150 hover:shadow-2xl hover:shadow-purple-500/20 will-change-transform"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-150" />
                 
                 <div className="relative z-10 flex flex-col items-center">
                   <motion.div
                     className="relative mb-8"
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.2, ease: "easeOut" }}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
                   >
                     <div className="relative">
-                      <img 
-                        src={member.avatar} 
-                        alt={member.name} 
-                        className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover shadow-2xl border-2 border-white/20"
-                      />
-                      <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 opacity-0 group-hover:opacity-30 transition-opacity duration-200 blur-md" />
+                      {member.avatar ? (
+                        <img 
+                          src={member.avatar} 
+                          alt={member.name} 
+                          className={`w-24 h-24 md:w-28 md:h-28 rounded-full object-cover shadow-2xl border-2 border-white/20 ${
+                            member.name === "Ahassam Shafiq" ? "object-top" : ""
+                          }`}
+                          style={member.name === "Ahassam Shafiq" ? { objectPosition: "center 20%" } : {}}
+                        />
+                      ) : (
+                        <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center shadow-2xl border-2 border-white/20">
+                          <span className="text-white text-2xl md:text-3xl font-bold">
+                            {member.name.split(' ').map(n => n[0]).join('')}
+                          </span>
+                        </div>
+                      )}
+                      <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 opacity-0 group-hover:opacity-20 transition-opacity duration-150 blur-md" />
                     </div>
                     {hoveredMember === member.name && (
                       <motion.div
                         initial={{ scale: 0, opacity: 0 }}
-                        animate={{ scale: 1.2, opacity: 0.4 }}
-                        className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-xl"
+                        animate={{ scale: 1.2, opacity: 0.3 }}
+                        transition={{ duration: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
+                        className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-xl will-change-transform"
                       />
                     )}
                   </motion.div>
                   
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-3 text-center group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-500 transition-all duration-200">
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-3 text-center group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-500 transition-all duration-150">
                     {member.name}
                   </h3>
                   
@@ -321,12 +333,12 @@ export default function AboutPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                         whileHover={{ 
-                          scale: 1.1, 
-                          y: -3,
-                          transition: { duration: 0.15, ease: "easeOut" }
+                          scale: 1.05, 
+                          y: -2,
+                          transition: { duration: 0.12, ease: [0.25, 0.46, 0.45, 0.94] }
                         }}
-                        whileTap={{ scale: 0.95 }}
-                        className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full text-xs md:text-sm font-semibold hover:shadow-lg transition-all duration-200 border border-white/20"
+                        whileTap={{ scale: 0.98 }}
+                        className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full text-xs md:text-sm font-semibold hover:shadow-lg transition-all duration-150 border border-white/20 will-change-transform"
                       >
                         {social.platform}
                       </motion.a>
@@ -340,15 +352,16 @@ export default function AboutPage() {
 
         {/* Mission Statement */}
         <motion.section 
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
           className="mb-16"
         >
           <motion.div 
-            className="relative bg-gradient-to-r from-blue-500/10 via-purple-600/10 to-pink-500/10 backdrop-blur-xl rounded-3xl p-12 md:p-16 text-center border border-white/20 hover:border-white/30 transition-all duration-300"
-            whileHover={{ scale: 1.01 }}
+            className="relative bg-gradient-to-r from-blue-500/10 via-purple-600/10 to-pink-500/10 backdrop-blur-xl rounded-3xl p-12 md:p-16 text-center border border-white/20 hover:border-white/30 transition-all duration-200"
+            whileHover={{ scale: 1.005 }}
+            transition={{ duration: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-3xl" />
             <div className="relative z-10">
@@ -362,12 +375,12 @@ export default function AboutPage() {
               </p>
               <motion.button
                 whileHover={{ 
-                  scale: 1.05,
+                  scale: 1.03,
                   boxShadow: "0 20px 25px -5px rgba(139, 92, 246, 0.3), 0 10px 10px -5px rgba(139, 92, 246, 0.1)"
                 }}
                 whileTap={{ scale: 0.98 }}
-                transition={{ duration: 0.2, ease: "easeOut" }}
-                className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-2xl transition-all duration-200 border border-white/20"
+                transition={{ duration: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
+                className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-2xl transition-all duration-150 border border-white/20 will-change-transform"
               >
                 Start Your Project Today
               </motion.button>
@@ -399,6 +412,9 @@ export default function AboutPage() {
         .animate-float-slow {
           animation: float-slow 10s ease-in-out infinite;
           animation-delay: -4s;
+        }
+        .will-change-transform {
+          will-change: transform;
         }
       `}</style>
     </section>

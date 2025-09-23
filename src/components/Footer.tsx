@@ -16,10 +16,8 @@ export default function Footer() {
           <div className="font-semibold text-lg mb-1">Social Links</div>
           <div className="w-12 h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mb-2" />
           <div className="flex gap-4 text-xl">
-            <a href="https://www.facebook.com/profile.php?id=100080653752014" className="hover:text-blue-400 transition-colors"><FaFacebookF /></a>
-            <a href="#" className="hover:text-blue-400 transition-colors"><FaLinkedinIn /></a>
-            <a href="#" className="hover:text-blue-400 transition-colors"><FaTwitter /></a>
-            <a href="#" className="hover:text-pink-400 transition-colors"><FaInstagram /></a>
+            <a href="#" className="hover:text-blue-400 transition-colors"><FaFacebookF /></a>
+            <a href="https://www.linkedin.com/in/kawish-iqbal-222767264/" className="hover:text-blue-400 transition-colors"><FaLinkedinIn /></a>
           </div>
         </div>
 
@@ -56,6 +54,7 @@ export default function Footer() {
           <div className="font-semibold text-lg mb-1">Contact Details</div>
           <div className="w-12 h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mb-2" />
           <div className="flex items-center gap-3"><FaPhoneAlt className="text-blue-400" /> <span>+92 330 5528031</span></div>
+          <div className="flex items-center gap-3"><FaPhoneAlt className="text-blue-400" /> <span>+92 333 5885402</span></div>
           <div className="flex items-center gap-3"><FaEnvelope className="text-blue-400" /> <span>info.triwebstudio@gmail.com</span></div>
           <div className="flex items-center gap-3"><FaMapMarkerAlt className="text-blue-400" />
             <span>The Mall Road, Peshawar</span>

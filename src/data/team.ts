@@ -25,11 +25,11 @@ export const team: TeamMember[] = [
     avatar: "/window.svg",
     socials: [
       { platform: "LinkedIn", url: "https://www.linkedin.com/in/ahsam-abbasi1133/" },
-      { platform: "GitHub", url: "https://github.com/AhassamShafique" },
+      { platform: "GitHub", url: "https://github.com/ahsamabbasi1133" },
     ],
   },
   {
-    name: "Shafay Gilani",
+    name: "Aqsa Afzal",
     role: "SEO Specialist",
     bio: "Drives organic growth and search visibility.",
     avatar: "/file.svg",
